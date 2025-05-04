@@ -30,12 +30,11 @@
         ctrl_alt: ctrl_alt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press &kp LC>
-            , <&macro_press &kp LA>
-            , <&macro_release &kp LA>
-            , <&macro_release &kp LC>
-            ;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z &kp M &kp K>
+                , <&macro_release &kp LSHFT>
+                ;
         };
     };
 
