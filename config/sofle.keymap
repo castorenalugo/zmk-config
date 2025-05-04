@@ -26,13 +26,16 @@
         };
     };
 
-    behaviors {
-        ctrl_alt: ctrl_alt_macro {
+    macros {
+        ctrl_alt: ctrl_alt {
             compatible = "zmk,behavior-macro";
-            label = "CTRL_ALT_MACRO";
             #binding-cells = <0>;
-            bindings = <&kp LC &kp LA>;
-            tap-ms = <0>;
+            bindings = <
+                &macro_press &kp LC
+                &macro_press &kp LA
+                &macro_release &kp LA
+                &macro_release &kp LC
+            >;
         };
     };
 
