@@ -112,8 +112,8 @@
         };
 
         shift {
-            bindings = <&sk LSHIFT>;
-            key-positions = <56 53>;
+            bindings = <&stickyk LSHIFT>;
+            key-positions = <31 28>;
         };
     };
 
