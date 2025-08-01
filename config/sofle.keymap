@@ -64,22 +64,22 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <32 33>;
+            key-positions = <32 33 31>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <28 27>;
+            key-positions = <28 27 26>;
         };
 
         par1left {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <29 28>;
+            key-positions = <40 39>;
         };
 
         par2left {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <17 16>;
+            key-positions = <28 27>;
         };
 
         par3left {
@@ -89,17 +89,17 @@
 
         par1right {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <31 30>;
+            key-positions = <45 46>;
         };
 
         par2right {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <18 19>;
+            key-positions = <31 32>;
         };
 
         par3right {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <20 21>;
+            key-positions = <20 19>;
         };
 
         shift {
