@@ -73,12 +73,12 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <32 33 31>;
+            key-positions = <32 33>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <28 27 26>;
+            key-positions = <27 26>;
         };
 
         par1left {
