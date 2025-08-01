@@ -33,6 +33,15 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
+
+        stickyk: stickyk {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKYK";
+            bindings = <&sk>;
+            #binding-cells = <1>;
+            release-after-ms = <2000>;
+            quick-release;
+        };
     };
 
     // Activate ADJUST layer by pressing raise and lower
@@ -107,10 +116,7 @@
             key-positions = <56 53>;
         };
     };
-    &sk {
-        release-after-ms = <2000>;
-        quick-release;
-    };
+
     keymap {
         compatible = "zmk,keymap";
 
