@@ -107,7 +107,10 @@
             key-positions = <56 53>;
         };
     };
-
+    &sk {
+        release-after-ms = <2000>;
+        quick-release;
+    };
     keymap {
         compatible = "zmk,keymap";
 
