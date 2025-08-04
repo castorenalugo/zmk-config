@@ -37,12 +37,6 @@
             hold-trigger-key-positions = <56>;
         };
 
-        ctrl_p_to_up: mod_morph_ctrl_p_to_up {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp UP>, <&kp P>;
-            mods = <(MOD_LCTRL)>;
-        };
     };
 
     macros {
