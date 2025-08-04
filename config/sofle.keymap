@@ -12,7 +12,8 @@
 
 #define BASE 0
 #define LOWER 1
-
+#define RAISE 2
+#define ADJUST 3
 
 / {
     behaviors {
@@ -24,13 +25,6 @@
             quick-tap-ms = <150>;
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
-        };
-
-        ctrl_p_to_up: mod_morph_ctrl_p_to_up {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp UP>, <&kp P>;
-            mods = <(MOD_LCTRL)>;
         };
 
         ctrlalt: ctrlalt {
