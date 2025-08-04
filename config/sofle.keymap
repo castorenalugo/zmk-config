@@ -32,15 +32,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        stickyk: stickyk {
-            compatible = "zmk,behavior-sticky-key";
-            label = "STICKYK";
-            bindings = <&sk>;
-            #binding-cells = <1>;
-            release-after-ms = <400>;
-            quick-release;
-        };
-
         ctrlalt: ctrlalt {
             compatible = "zmk,behavior-hold-tap";
             label = "CTRLALT";
@@ -49,17 +40,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <170>;
             hold-trigger-key-positions = <56>;
-        };
-    };
-
-    // Activate ADJUST layer by pressing raise and lower
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        adjust_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
         };
     };
 
