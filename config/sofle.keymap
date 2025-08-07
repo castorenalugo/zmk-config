@@ -65,6 +65,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
+
+        ct_f_right: ct_f_right {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CT_F_RIGHT";
+            bindings = <&kp F>, <&kp RIGHT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     macros {
