@@ -106,9 +106,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LGUI &kp 1>,
+                <&kp LGUI &kp NUMBER_1>,
                 <&macro_release>,
-                <&kp LGUI &kp 1>,
+                <&kp LGUI &kp NUMBER_1>,
                 <&macro_press>,
                 <&to 3>,
                 <&macro_release>,
@@ -120,9 +120,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LGUI &kp 2>,
+                <&kp LGUI &kp NUMBER_2>,
                 <&macro_release>,
-                <&kp LGUI &kp 2>,
+                <&kp LGUI &kp NUMBER_2>,
                 <&macro_press>,
                 <&to 4>,
                 <&macro_release>,
