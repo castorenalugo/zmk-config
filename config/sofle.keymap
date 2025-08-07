@@ -105,27 +105,22 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LGUI &kp NUMBER_1>,
-                <&macro_release>,
-                <&kp LGUI &kp NUMBER_1>,
-                <&macro_press>,
-                <&to 3>,
-                <&macro_release>,
+                <&macro_press &kp LGUI>,
+                <&macro_press &kp NUMBER_1>,
+                <&macro_release &kp NUMBER_1>,
+                <&macro_release &kp LGUI>,
                 <&to 3>;
         };
+
 
         to_normal: to_normal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LGUI &kp NUMBER_2>,
-                <&macro_release>,
-                <&kp LGUI &kp NUMBER_2>,
-                <&macro_press>,
-                <&to 4>,
-                <&macro_release>,
+                <&macro_press &kp LGUI>,
+                <&macro_press &kp NUMBER_2>,
+                <&macro_release &kp NUMBER_2>,
+                <&macro_release &kp LGUI>,
                 <&to 4>;
         };
     };
