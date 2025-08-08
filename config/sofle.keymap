@@ -109,7 +109,8 @@
                 <&macro_press &kp NUMBER_1>,
                 <&macro_release &kp NUMBER_1>,
                 <&macro_release &kp LCTRL>,
-                <&to 3>;
+                <&macro_press &to 3>,
+                <&macro_release &to 3>;
         };
 
 
@@ -121,7 +122,8 @@
                 <&macro_press &kp NUMBER_2>,
                 <&macro_release &kp NUMBER_2>,
                 <&macro_release &kp LALT>,
-                <&to 4>;
+                <&macro_press &to 0>,
+                <&macro_release &to 0>;
         };
     };
 
