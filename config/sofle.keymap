@@ -88,17 +88,23 @@
         };
 
         win_cut: win_cut {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL &kp X>,
-                <&macro_release>,
-                <&kp LCTRL &kp X>,
-                <&macro_press>,
-                <&kp LCTRL &kp F>,
-                <&macro_release>,
-                <&kp LCTRL &kp F>;
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings =
+            <&macro_press &kp LCTRL>,
+            <&macro_press &kp X>,
+            <&macro_release &kp X>,
+            <&macro_release &kp LCTRL>;
+        };
+
+        win_copy: win_copy {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings =
+            <&macro_press &kp LCTRL>,
+            <&macro_press &kp V>,
+            <&macro_release &kp V>,
+            <&macro_release &kp LCTRL>;
         };
 
         to_emacs: to_emacs {
