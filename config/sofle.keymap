@@ -120,13 +120,13 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LGUI>,
+                <&kp LCTRL>,
                 <&macro_press>,
                 <&kp NUMBER_1>,
                 <&macro_release>,
                 <&kp NUMBER_1>,
                 <&macro_release>,
-                <&kp LGUI>,
+                <&kp LCTRL>,
                 <&macro_press>,
                 <&to 2>,
                 <&macro_release>,
@@ -170,10 +170,7 @@
                 <&macro_release>,
                 <&kp F>,
                 <&macro_release>,
-                <&macro_press>,
-                <&kp PERCENT>,
-                <&macro_release>,
-                <&kp PERCENT>,
+                <&kp LCTRL &kp PERCENT>;
         };
     };
 
