@@ -170,7 +170,7 @@
 &kp TAB           &kp Q             &kp W          &kp E             &kp R           &kp T                                          &kp Y        &kp U          &kp I            &kp O            &ct_p_up           &kp BACKSPACE
 &kp SINGLE_QUOTE  &kp A             &kp S          &kp D             &ct_f_right     &kp G                                          &kp H        &kp J          &kp K            &kp L            &kp SEMI           &kp LS(SINGLE_QUOTE)
 &to_emacs         &mt LEFT_GUI Z    &mt LALT X     &mt LCTRL C       &kp V           &ct_b_left            &kp C_MUTE    &none      &ct_n_down   &kp M          &mt RCTRL COMMA  &mt RALT PERIOD  &mt RGUI SLASH     &to_browser
-                                    &win_cut       &win_copy         &kp LEFT_ALT    &kp LCTRL             &kp ENTER     &kp LSHFT  &lt 1 SPACE  &kp DELETE     &kp P            &tog 2
+                                    &win_cut       &win_copy         &kp LEFT_ALT    &kp LCTRL             &kp ENTER     &kp LSHFT  &mo 1  &kp DELETE     &kp L            &tog 2
             >;
 
             sensor-bindings =
@@ -198,7 +198,7 @@
 &kp TAB           &kp Q             &kp W          &kp E             &kp R           &kp T                                          &kp Y        &kp U          &kp I            &kp O            &ct_p_up           &kp BACKSPACE
 &kp SINGLE_QUOTE  &kp A             &kp S          &kp D             &ct_f_right     &kp G                                          &kp H        &kp J          &kp K            &kp L            &kp SEMI           &kp LS(SINGLE_QUOTE)
 &to_emacs         &mt LEFT_GUI Z    &mt LALT X     &mt LCTRL C       &kp V           &ct_b_left            &kp C_MUTE    &none      &ct_n_down   &kp M          &mt RCTRL COMMA  &mt RALT PERIOD  &mt RGUI SLASH     &to_browser
-                                    &win_cut       &win_copy         &kp LEFT_ALT    &kp LCTRL             &kp ENTER     &kp LSHFT  &trans       &kp DELETE     &kp K            &tog 2
+                                    &win_cut       &win_copy         &kp LEFT_ALT    &kp LCTRL             &kp ENTER     &kp LSHFT  &trans       &kp DELETE     &kp T            &tog 2
             >;
 
             sensor-bindings =
