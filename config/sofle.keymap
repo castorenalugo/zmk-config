@@ -65,9 +65,9 @@
         pg_nav: pg_nav {
             compatible = "zmk,behavior-mod-morph";
             label = "PG_NAV";
+            bindings = <&kp V>, <&kp PG_DN>;
             #binding-cells = <0>;
-            bindings = <&kp V>, <&kp PG_DN>, <&kp PG_UP>;
-            mods = <(MOD_LCTL)|(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
         };
 
     };
