@@ -17,26 +17,6 @@
 
 / {
     behaviors {
-        ht: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <100>;
-            bindings = <&kp>, <&kp>;
-        };
-
-        ctrlalt: ctrlalt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "CTRLALT";
-            bindings = <&ctrl_alt_combo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <170>;
-            hold-trigger-key-positions = <56>;
-        };
-
         ct_p_up: ct_p_up {
             compatible = "zmk,behavior-mod-morph";
             label = "CT_P_UP";
