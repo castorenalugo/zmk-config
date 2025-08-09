@@ -67,7 +67,7 @@
             label = "PG_NAV";
             #binding-cells = <0>;
             bindings = <&kp V>, <&kp PG_DN>, <&kp PG_UP>;
-            mods = <(MOD_LCTL) (MOD_LALT)>;
+            mods = <(MOD_LCTL)|(MOD_LALT)>;
         };
 
     };
