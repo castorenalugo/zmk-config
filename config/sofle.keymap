@@ -170,7 +170,11 @@
                 <&macro_release>,
                 <&kp F>,
                 <&macro_release>,
-                <&kp LCTRL &kp PERCENT>;
+                <&kp LCTRL>,
+                <&macro_press>,
+                <&kp PERCENT>,
+                <&macro_release>,
+                <&kp PERCENT>;
         };
     };
 
