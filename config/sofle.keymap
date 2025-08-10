@@ -65,15 +65,22 @@
         mod_ctrl: mod_ctrl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp V>, <&kp PAGE_UP>;
+            bindings = <&kp V>, <&kp PAGE_DOWN>;
             mods = <MOD_LCTL>;
         };
 
-        mod_alt: mod_alt {
+        mod_nav: mod_nav {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&mod_ctrl>, <&kp PAGE_DOWN>;
+            bindings = <&mod_ctrl>, <&kp PAGE_UP>;
             mods = <MOD_LALT>;
+        };
+
+        home: home {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&kp HOME>;
+            mods = <(MOD_LCTL)>;
         };
 
     };
@@ -150,8 +157,8 @@
             bindings = <
 &kp ESCAPE        &kp LS(NUMBER_7)  &kp LS(MINUS)  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS                           &kp LC(F)    &kp LS(EQUAL)  &kp EQUAL        &kp MINUS        &kp LS(BACKSLASH)  &kp LS(SLASH)
 &kp TAB           &kp Q             &kp W          &kp E             &kp R           &kp T                                          &kp Y        &kp U          &kp I            &kp O            &ct_p_up           &kp BACKSPACE
-&kp SINGLE_QUOTE  &kp A             &kp S          &kp D             &ct_f_right     &kp G                                          &kp H        &kp J          &kp K            &kp L            &kp SEMI           &kp LS(SINGLE_QUOTE)
-&to_emacs         &mt LEFT_GUI Z    &mt LALT X     &mt LCTRL C       &mod_alt        &ct_b_left            &kp C_MUTE    &none      &ct_n_down   &kp M          &mt RCTRL COMMA  &mt RALT PERIOD  &mt RGUI SLASH     &to_browser
+&kp SINGLE_QUOTE  &home             &kp S          &kp D             &ct_f_right     &kp G                                          &kp H        &kp J          &kp K            &kp L            &kp SEMI           &kp LS(SINGLE_QUOTE)
+&to_emacs         &mt LEFT_GUI Z    &mt LALT X     &mt LCTRL C       &mod_nav        &ct_b_left            &kp C_MUTE    &none      &ct_n_down   &kp M          &mt RCTRL COMMA  &mt RALT PERIOD  &mt RGUI SLASH     &to_browser
                                     &kp LC(X)      &kp LC(C)         &kp LEFT_ALT    &kp LCTRL             &kp ENTER     &kp LSHFT  &lt 2 SPACE  &kp DELETE     &kp LC(V)        &kp LC(Z)
             >;
 
