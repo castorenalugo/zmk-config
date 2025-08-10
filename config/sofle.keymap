@@ -264,11 +264,11 @@
         fun {
             display-name = "fun";
             bindings = <
-&none      &none         &none         &kp ASTERISK  &none         &none                                           &none              &none           &kp F10  &none   &none    &none
-&none      &none         &kp W         &kp E         &none         &none                                           &kp Y              &kp F7          &kp F8   &kp F9  &kp P    &none
-&kp CARET  &kp A         &kp DOLLAR    &kp D         &kp F         &kp C_VOLUME_UP                                 &kp C_VOLUME_DOWN  &kp F4          &kp F5   &kp F6  &kp F11  &kp F12
-&none      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &none              &none       &kp N              &kp F1          &kp F2   &kp F3  &kp F13  &none
-                         &none         &none         &kp LALT      &kp LCTRL        &kp PRINTSCREEN    &bt BT_CLR  &trans             &bt BT_CLR_ALL  &none    &none
+&none      &none         &none         &kp ASTERISK  &none         &none                                           &none              &none   &kp F10  &none   &none    &none
+&none      &none         &kp W         &kp E         &none         &none                                           &kp Y              &kp F7  &kp F8   &kp F9  &kp P    &none
+&kp CARET  &kp A         &kp DOLLAR    &kp D         &kp F         &kp C_VOLUME_UP                                 &kp C_VOLUME_DOWN  &kp F4  &kp F5   &kp F6  &kp F11  &kp F12
+&none      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &none              &none       &kp N              &kp F1  &kp F2   &kp F3  &kp F13  &none
+                         &none         &none         &kp LALT      &kp LCTRL        &kp PRINTSCREEN    &bt BT_CLR  &bt BT_CLR_ALL     &none   &none    &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
