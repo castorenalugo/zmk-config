@@ -95,7 +95,7 @@
             label = "MAC_CUT";
             #binding-cells = <0>;
 
-            bindings = <&kp W>, <&kp LGUI(X)>;
+            bindings = <&kp W>, <&kp LG(X)>;
             mods = <(MOD_LCTL)>;
         };
 
