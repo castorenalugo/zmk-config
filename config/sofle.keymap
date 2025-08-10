@@ -109,7 +109,7 @@
             mods = <MOD_LALT>;
         };
 
-        w_cut: m_cut {
+        w_cut: w_cut {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp W>, <&kp LC(X)>;
@@ -120,7 +120,7 @@
         w_cut_copy: w_cut_copy {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&m_cut>, <&kp LC(C)>;
+            bindings = <&w_cut>, <&kp LC(C)>;
 
             mods = <MOD_LALT>;
         };
