@@ -292,6 +292,20 @@
                 <&macro_release>,
                 <&kp PERCENT>;
         };
+
+        p1: p1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(A) &kp LS(C) &kp N1 &kp N0 &kp N8 &kp A &kp L &kp L &kp I &kp E &kp D &kp POUND &kp DLLR>;
+            label = "P1";
+        };
+
+        p2: p2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(J) &kp E &kp R &kp G &kp O &kp T &kp A &kp S &kp S &kp N1 &kp N2 &kp N3 &kp EXCL &kp EXCL>;
+            label = "P2";
+        };
     };
 
     keymap {
@@ -336,9 +350,9 @@
         fun {
             display-name = "fun";
             bindings = <
-&none  &none         &none         &none         &none         &none                                           &none              &none   &kp F10  &none   &none    &none
+&none  &none         &none         &p1           &none         &none                                           &none              &none   &kp F10  &none   &none    &none
 &none  &none         &kp W         &kp E         &none         &none                                           &kp Y              &kp F7  &kp F8   &kp F9  &kp P    &none
-&none  &kp A         &kp CARET     &kp D         &kp F         &kp C_VOLUME_UP                                 &kp C_VOLUME_DOWN  &kp F4  &kp F5   &kp F6  &kp F11  &kp F12
+&p2    &kp A         &kp CARET     &kp D         &kp F         &kp C_VOLUME_UP                                 &kp C_VOLUME_DOWN  &kp F4  &kp F5   &kp F6  &kp F11  &kp F12
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &none              &none       &kp N              &kp F1  &kp F2   &kp F3  &kp F13  &none
                      &none         &none         &kp LALT      &kp LCTRL        &kp PRINTSCREEN    &bt BT_CLR  &bt BT_CLR_ALL     &none   &none    &none
             >;
