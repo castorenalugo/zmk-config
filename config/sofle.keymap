@@ -159,36 +159,103 @@
     };
 
     macros {
+        to_folder: to_folder {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_press>,
+                <&kp NUMBER_1>,
+                <&macro_release>,
+                <&kp NUMBER_1>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_press>,
+                <&to 0>,
+                <&macro_release>,
+                <&to 0>;
+        };
         to_emacs: to_emacs {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL>,
+                <&kp LGUI>,
                 <&macro_press>,
-                <&kp NUMBER_1>,
+                <&kp NUMBER_2>,
                 <&macro_release>,
-                <&kp NUMBER_1>,
+                <&kp NUMBER_2>,
                 <&macro_release>,
-                <&kp LCTRL>,
+                <&kp LGUI>,
                 <&macro_press>,
                 <&to 1>,
                 <&macro_release>,
                 <&to 1>;
         };
-
         to_browser: to_browser {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL>,
+                <&kp LGUI>,
                 <&macro_press>,
-                <&kp NUMBER_2>,
+                <&kp NUMBER_3>,
                 <&macro_release>,
-                <&kp NUMBER_2>,
+                <&kp NUMBER_3>,
                 <&macro_release>,
-                <&kp LCTRL>,
+                <&kp LGUI>,
+                <&macro_press>,
+                <&to 0>,
+                <&macro_release>,
+                <&to 0>;
+        };
+        to_terminal: to_terminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_press>,
+                <&kp NUMBER_4>,
+                <&macro_release>,
+                <&kp NUMBER_4>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_press>,
+                <&to 0>,
+                <&macro_release>,
+                <&to 0>;
+        };
+        to_notes: to_notes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_press>,
+                <&kp NUMBER_5>,
+                <&macro_release>,
+                <&kp NUMBER_5>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_press>,
+                <&to 0>,
+                <&macro_release>,
+                <&to 0>;
+        };
+        to_chat: to_chat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_press>,
+                <&kp NUMBER_6>,
+                <&macro_release>,
+                <&kp NUMBER_6>,
+                <&macro_release>,
+                <&kp LGUI>,
                 <&macro_press>,
                 <&to 0>,
                 <&macro_release>,
