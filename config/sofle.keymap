@@ -361,11 +361,11 @@
 
         num_sym {
             bindings = <
-&trans  &trans          &trans            &trans                &trans        &trans                       &trans          &trans     &trans                 &trans             &trans           &trans
-&trans  &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3          &kp NUMBER_4  &kp N5                       &kp NUMBER_6    &kp N7     &kp N8                 &kp N9             &kp N0           &trans
-&trans  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp EQUAL     &kp MINUS                    &kp UNDERSCORE  &kp PLUS   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans
-&trans  &kp AT          &kp DOLLAR        &kp AMPS              &kp PERCENT   &kp HASH   &trans    &trans  &kp ASTRK       &kp TILDE  &kp PIPE               &kp EXCLAMATION    &kp BACKSLASH    &trans
-                        &trans            &trans                &kp CARET     &trans     &trans    &trans  &trans          &trans     &trans                 &trans
+&trans  &trans          &trans            &trans                &trans             &trans                       &trans          &trans            &trans                 &trans             &trans           &trans
+&trans  &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3          &kp NUMBER_4       &kp N5                       &kp NUMBER_6    &kp N7            &kp N8                 &kp N9             &kp N0           &trans
+&trans  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp EQUAL          &kp MINUS                    &kp UNDERSCORE  &kp PLUS          &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans
+&trans  &kp AT          &kp DOLLAR        &kp AMPS              &kp DOUBLE_QUOTES  &kp GRAVE  &trans    &trans  &kp TILDE       &kp SINGLE_QUOTE  &kp PIPE               &kp EXCLAMATION    &kp BACKSLASH    &trans
+                        &trans            &trans                &kp PERCENT        &trans     &trans    &trans  &trans          &trans            &trans                 &trans
             >;
         };
 
