@@ -222,8 +222,8 @@ control {
         prefix {
             display-name = "prefix";
             bindings = <
-&w_incrse    &none       &none         &split      &kp F2      &none                       &kp LC(Y)    &none      &none        &none       &w_join     &none
-&none        &none       &none         &none       &none       &none                       &none        &none      &none        &other_w    &none      &none
+&w_incrse    &none       &none         &split      &none      &none                        &none       &none      &none        &none       &w_join     &none
+&none        &none       &none         &none       &kp F2     &none                        &kp LC(Y)   &none      &none        &other_w    &none      &none
 &none        &none       &save         &none       &find       &to 0                       &markall     &none      &killbfr     &none       &none      &none
 &to 0        &none       &none         &none       &none       &none                       &none        &none      &b_bufr      &f_bufr     &none      &none
                         &w_decrse      &none       &none       &none        &none &none    &none        &none      &none
