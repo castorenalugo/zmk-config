@@ -189,7 +189,7 @@ control {
             display-name = "control";
             bindings = <
 &kp LC(EQUAL) &none      &none          &none        &none        &none                      &none      &none      &none         &none        &none         &none
-&none         &none      &kp LC(X)      &kp END      &kp LS(F3)   &none                      &kp LC(V)  &none      &none         &none        &kp UP        &del_line
+&none         &none      &kp LC(X)      &kp END      &kp LC(H)   &none                      &kp LC(V)  &none      &none         &none        &kp UP        &del_line
 &rub_line     &kp HOME   &kp LC(F)      &cpy_line_l  &kp RIGHT    &none                      &none      &none      &cpy_line_r   &kp LC(L)    &kp LC(GRAVE) &none
 &kp LC(B)     &none      &to 3          &none        &kp PG_DN    &kp LEFT    &none &none    &kp DOWN   &none      &kp LC(DOT)   &kp F12  &kp LC(Z)     &kp LC(J)
                          &kp LC(MINUS)  &none        &none        &none       &none &none    &none      &kp LSHFT  &none
@@ -199,7 +199,7 @@ control {
             display-name = "meta";
             bindings = <
 &none         &none    &none       &none        &none           &none                       &none     &none      &none        &none       &none        &none
-&none         &none    &kp LC(C)   &none        &none           &none                       &none     &none      &none        &none       &none        &del_word
+&none         &none    &kp LC(C)   &none        &kp F2           &none                       &none     &none      &none        &none       &none        &del_word
 &rub_word     &none    &none       &cpy_word_l  &kp LC(RIGHT)   &none                       &none     &none      &cpy_word_r  &none       &none        &none
 &none         &none    &none       &none        &kp PG_UP       &kp LC(LEFT) &none &none     &none     &none     &none      &kp LC(F12)   &none      &none
                        &none       &none        &none           &none        &none &none    &none     &kp LSHFT  &none
@@ -209,7 +209,7 @@ control {
             display-name = "prefix";
             bindings = <
 &w_incrse    &none       &none         &split      &none      &none                        &none       &none      &none        &none       &w_join     &none
-&none        &none       &none         &none       &rename    &none                        &kp LC(Y)   &none      &none        &other_w    &none      &none
+&none        &none       &none         &none       &none      &none                        &kp LC(Y)   &none      &none        &other_w    &none      &none
 &none        &none       &save         &none       &find       &to 0                       &markall     &none      &killbfr     &none       &none      &none
 &to 0        &none       &none         &none       &none       &none        &none &none     &none        &none      &b_bufr      &f_bufr     &none      &none
                         &w_decrse      &none       &none       &none        &none &none    &none        &none      &none
