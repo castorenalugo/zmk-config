@@ -136,6 +136,13 @@
                 <&macro_tap &kp LC(Y)>,
                 <&to 0>;
         };
+        rename: rename {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp F2>,
+                <&to 0>;
+        };
         w_incrse: w_incrse {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -223,7 +230,7 @@ control {
             display-name = "prefix";
             bindings = <
 &w_incrse    &none       &none         &split      &none      &none                        &none       &none      &none        &none       &w_join     &none
-&none        &none       &none         &none       &kp F2     &none                        &kp LC(Y)   &none      &none        &other_w    &none      &none
+&none        &none       &none         &none       &rename    &none                        &kp LC(Y)   &none      &none        &other_w    &none      &none
 &none        &none       &save         &none       &find       &to 0                       &markall     &none      &killbfr     &none       &none      &none
 &to 0        &none       &none         &none       &none       &none                       &none        &none      &b_bufr      &f_bufr     &none      &none
                         &w_decrse      &none       &none       &none        &none &none    &none        &none      &none
