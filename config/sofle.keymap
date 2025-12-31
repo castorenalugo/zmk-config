@@ -10,27 +10,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    behaviors {
-        m_dot: m_dot {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp F12>, <&kp LC(END)>;
-            mods = <MOD_LSFT>;
-        };
-        m_coma: m_coma {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LEFT)>, <&kp LC(HOME)>;
-            mods = <MOD_LSFT>;
-        };
-        m_slsh: m_slsh {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LC(SPACE)>, <&kp LC(Y)>;
-            mods = <MOD_LSFT>;
-        };
-    };
-
     macros {
         find: find {
             compatible = "zmk,behavior-macro";
@@ -222,7 +201,7 @@ control {
 &none         &none    &none       &none        &none           &none                       &none     &none      &none        &none       &none        &none
 &none         &none    &kp LC(C)   &none        &none           &none                       &none     &none      &none        &none       &none        &del_word
 &rub_word     &none    &none       &cpy_word_l  &kp LC(RIGHT)   &none                       &none     &none      &cpy_word_r  &none       &none        &none
-&none         &none    &none       &none        &kp PG_UP       &kp LC(LEFT)                &none     &none      &m_coma      &kp LC(F12) &m_slsh      &none
+&none         &none    &none       &none        &kp PG_UP       &kp LC(LEFT) &none &none     &none     &none     &none      &kp LC(F12)   &none      &none
                        &none       &none        &none           &none        &none &none    &none     &kp LSHFT  &none
             >;
         };
@@ -232,7 +211,7 @@ control {
 &w_incrse    &none       &none         &split      &none      &none                        &none       &none      &none        &none       &w_join     &none
 &none        &none       &none         &none       &rename    &none                        &kp LC(Y)   &none      &none        &other_w    &none      &none
 &none        &none       &save         &none       &find       &to 0                       &markall     &none      &killbfr     &none       &none      &none
-&to 0        &none       &none         &none       &none       &none                       &none        &none      &b_bufr      &f_bufr     &none      &none
+&to 0        &none       &none         &none       &none       &none        &none &none     &none        &none      &b_bufr      &f_bufr     &none      &none
                         &w_decrse      &none       &none       &none        &none &none    &none        &none      &none
             >;
         };
