@@ -173,21 +173,21 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap &kp LC(K)>,
-                <&macro_tap &kp LC(L)>
+                <&macro_tap &kp LC(L)>;
         };
         foldall: foldall {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_tap &kp LC(K)>,
-                <&macro_tap &kp LC(2)>
+                <&macro_tap &kp LC(2)>;
         };
         unfoldall: unfoldall {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_tap &kp LC(K)>,
-                <&macro_tap &kp LC(2)>
+                <&macro_tap &kp LC(J)>;
         };
     };
 
