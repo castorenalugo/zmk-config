@@ -150,8 +150,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap &kp LC(X)>,
-                <&macro_tap &kp N0>,
+                <&macro_tap &kp LC(K)>,
+                <&macro_tap &kp W>,
                 <&to 0>;
         };
         f_bufr: f_bufr {
@@ -207,6 +207,16 @@ control {
         };
         prefix {
             display-name = "prefix";
+            bindings = <
+&w_incrse    &none       &none         &split      &none      &none                        &none       &none      &none        &none       &w_join     &none
+&none        &none       &none         &none       &none      &none                        &kp LC(Y)   &none      &none        &other_w    &none      &none
+&none        &none       &save         &none       &find       &to 0                       &markall     &none      &killbfr     &none       &none      &none
+&to 0        &none       &none         &none       &none       &none        &none &none     &none        &none      &b_bufr      &f_bufr     &none      &none
+                        &w_decrse      &none       &none       &none        &none &none    &none        &none      &none
+            >;
+        };
+        custom {
+            display-name = "custom";
             bindings = <
 &w_incrse    &none       &none         &split      &none      &none                        &none       &none      &none        &none       &w_join     &none
 &none        &none       &none         &none       &none      &none                        &kp LC(Y)   &none      &none        &other_w    &none      &none
