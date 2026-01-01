@@ -189,6 +189,16 @@
                 <&macro_tap &kp LC(K)>,
                 <&macro_tap &kp LC(J)>;
         };
+        references: references {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press &kp LSHFT &kp LALT>,
+                <&macro_tap &kp F12>,
+                <&macro_release &kp LSHFT &kp LALT>;
+        };
     };
 
     keymap {
