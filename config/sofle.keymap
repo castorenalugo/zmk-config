@@ -168,6 +168,38 @@
                 <&macro_tap &kp LC(PG_UP)>,
                 <&to 0>;
         };
+        fold: fold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp LC(K)>,
+                <&macro_tap &kp LC(L)>,
+                <&to 0>;
+        };
+        foldall: foldall {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp LC(K)>,
+                <&macro_tap &kp LC(2)>,
+                <&to 0>;
+        };
+        foldall: foldall {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp LC(K)>,
+                <&macro_tap &kp LC(2)>,
+                <&to 0>;
+        };
+        unfoldall: unfoldall {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp LC(K)>,
+                <&macro_tap &kp LC(2)>,
+                <&to 0>;
+        };
     };
 
     keymap {
@@ -180,7 +212,7 @@
 &kp TAB       &kp Q      &kp W        &kp E         &kp R       &kp T                       &kp Y      &kp U      &kp I       &kp O     &kp P       &kp DEL
 &kp BSPC      &kp A      &kp S        &kp D         &kp F       &kp G                       &kp H      &kp J      &kp K       &kp L     &kp SEMI    &kp RET
 &kp ESC       &kp Z      &kp X        &kp C         &kp V       &kp B    &none     &none    &kp N      &kp M      &kp COMMA   &kp DOT   &kp SLASH   &kp BSLH
-                         &kp MINUS    &kp LBKT      &mo 2       &mo 1    &none     &none    &kp SPACE  &kp LSHFT  &kp RBKT    &kp SQT
+                         &kp MINUS    &kp LBKT      &mo 2       &mo 1    &mo 4     &none    &kp SPACE  &kp LSHFT  &kp RBKT    &kp SQT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -189,9 +221,9 @@ control {
             display-name = "control";
             bindings = <
 &kp LC(EQUAL) &none      &none          &none        &none        &none                      &none      &none      &none         &none        &none         &none
-&none         &none      &kp LC(X)      &kp END      &kp LC(H)   &none                      &kp LC(V)  &none      &none         &none        &kp UP        &del_line
+&none         &none      &kp LC(X)      &kp END      &none        &none                      &kp LC(V)  &none      &none         &none        &kp UP        &del_line
 &rub_line     &kp HOME   &kp LC(F)      &cpy_line_l  &kp RIGHT    &none                      &none      &none      &cpy_line_r   &kp LC(L)    &kp LC(GRAVE) &none
-&kp LC(B)     &none      &to 3          &none        &kp PG_DN    &kp LEFT    &none &none    &kp DOWN   &none      &kp LC(DOT)   &kp F12  &kp LC(Z)     &kp LC(J)
+&kp LC(B)     &none      &to 3          &none        &kp PG_DN    &kp LEFT    &none &none    &kp DOWN   &none      &none        &none  &kp LC(Z)     &kp LC(J)
                          &kp LC(MINUS)  &none        &none        &none       &none &none    &none      &kp LSHFT  &none
             >;
         };
@@ -199,9 +231,9 @@ control {
             display-name = "meta";
             bindings = <
 &none         &none    &none       &none        &none           &none                       &none     &none      &none        &none       &none        &none
-&none         &none    &kp LC(C)   &none        &kp F2           &none                       &none     &none      &none        &none       &none        &del_word
+&none         &none    &kp LC(C)   &none        &none           &none                       &none     &none      &none        &none       &none        &del_word
 &rub_word     &none    &none       &cpy_word_l  &kp LC(RIGHT)   &none                       &none     &none      &cpy_word_r  &none       &none        &none
-&none         &none    &none       &none        &kp PG_UP       &kp LC(LEFT) &none &none     &none     &none     &none      &kp LC(F12)   &none      &none
+&none         &none    &none       &none        &kp PG_UP       &kp LC(LEFT) &none &none     &none     &none     &none      &none   &none      &none
                        &none       &none        &none           &none        &none &none    &none     &kp LSHFT  &none
             >;
         };
@@ -215,14 +247,14 @@ control {
                         &w_decrse      &none       &none       &none        &none &none    &none        &none      &none
             >;
         };
-        custom {
-            display-name = "custom";
+        super {
+            display-name = "super";
             bindings = <
-&w_incrse    &none       &none         &split      &none      &none                        &none       &none      &none        &none       &w_join     &none
-&none        &none       &none         &none       &none      &none                        &kp LC(Y)   &none      &none        &other_w    &none      &none
-&none        &none       &save         &none       &find       &to 0                       &markall     &none      &killbfr     &none       &none      &none
-&to 0        &none       &none         &none       &none       &none        &none &none     &none        &none      &b_bufr      &f_bufr     &none      &none
-                        &w_decrse      &none       &none       &none        &none &none    &none        &none      &none
+&none        &none       &none      &none       &none      &none                           &none       &none        &none        &none         &none      &none
+&none        &none       &none      &none       &kp LC(H)  &none                           &none       &unfoldall   &kp LC(F12)  &none         &none      &none
+&none        &none       &kp F2     &kp F12     &fold      &none                           &foldall    &none        &none        &none         &none      &none
+&none        &none       &none      &none       &none      &none        &none   &none      &none       &none        &none        &kp LC(DOT)   &none      &none
+                         &none      &none       &none      &none        &none   &none      &none       &none        &none
             >;
         };
     };
