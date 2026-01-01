@@ -184,14 +184,6 @@
                 <&macro_tap &kp LC(2)>,
                 <&to 0>;
         };
-        foldall: foldall {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap &kp LC(K)>,
-                <&macro_tap &kp LC(2)>,
-                <&to 0>;
-        };
         unfoldall: unfoldall {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
