@@ -180,7 +180,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap &kp LC(K)>,
-                <&macro_tap &kp LC(2)>;
+                <&macro_tap &kp LC(N2)>;
         };
         unfoldall: unfoldall {
             compatible = "zmk,behavior-macro";
