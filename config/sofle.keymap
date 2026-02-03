@@ -8,13 +8,6 @@
 
 / {
     macros {
-        nextbfr: nextbfr {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap &kp LC(TAB)>,
-                <&to 0>;
-        };
         cpy_line_r: cpy_line_r {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -74,57 +67,6 @@
             bindings =
                 <&macro_tap &kp LS(LC(LEFT))>,
                 <&macro_tap &kp BSPC>;
-        };
-        split: split {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap &kp LC(BSLH)>,
-                <&macro_tap &kp LC(K)>,
-                <&macro_tap &kp LC(Y)>,
-                <&to 0>;
-        };
-        rename: rename {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap &kp F2>,
-                <&to 0>;
-        };
-        fold: fold {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap &kp LC(K)>,
-                <&macro_tap &kp LC(L)>;
-        };
-        foldall: foldall {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap &kp LC(K)>,
-                <&macro_tap &kp LC(N2)>;
-        };
-        unfoldall: unfoldall {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap &kp LC(K)>,
-                <&macro_tap &kp LC(J)>;
-        };
-        refs: refs {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap &kp LC(K)>,
-                <&macro_tap &kp LC(SEMI)>;
-        };
-        tog_files: tog_files {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap &kp LC(K)>,
-                <&macro_tap &kp LC(A)>;
         };
     };
 
